@@ -1,3 +1,5 @@
+--Minha Versão única - Magnus Modificações 
+--Ser tive outro igual, e meu ramake rsrsrs
 local MarketplaceService = game:GetService("MarketplaceService")
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -10,86 +12,53 @@ local PlayerMouse = Player:GetMouse()
 
 local redzlib = {
 	Themes = {
-		Darker = {
-			["Color Hub 1"] = ColorSequence.new({
-    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)),
-    ColorSequenceKeypoint.new(0.50, Color3.fromRGB(64, 0, 64)),
-    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(128, 0, 128))
-}),
-["Color Hub 2"] = Color3.fromRGB(0, 0, 0),
-["Color Stroke"] = Color3.fromRGB(50, 0, 50),
-["Color Theme"] = Color3.fromRGB(128, 0, 128),
-["Color Text"] = Color3.fromRGB(243, 243, 243),
-["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
-		},
-		Laranja = {
-			["Color Hub 1"] = ColorSequence.new({
-    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(50, 20, 0)),
-    ColorSequenceKeypoint.new(0.50, Color3.fromRGB(128, 60, 0)),
-    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 120, 0))
-}),
-["Color Hub 2"] = Color3.fromRGB(20, 10, 0),
-["Color Stroke"] = Color3.fromRGB(80, 40, 0),
-["Color Theme"] = Color3.fromRGB(255, 120, 0),
-["Color Text"] = Color3.fromRGB(255, 255, 255),
-["Color Dark Text"] = Color3.fromRGB(200, 200, 200)
-		},
-		Preto = {
-			["Color Hub 1"] = ColorSequence.new({
-    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(10, 10, 10)),
-    ColorSequenceKeypoint.new(0.50, Color3.fromRGB(30, 30, 30)),
-    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(50, 50, 50))
-}),
-["Color Hub 2"] = Color3.fromRGB(0, 0, 0),
-["Color Stroke"] = Color3.fromRGB(40, 40, 40),
-["Color Theme"] = Color3.fromRGB(100, 100, 100),
-["Color Text"] = Color3.fromRGB(255, 255, 255),
-["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
-		},
-		AzulEscuro = {
-			["Color Hub 1"] = ColorSequence.new({
-    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 20, 40)),
-    ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 40, 80)),
-    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 80, 160))
-}),
-["Color Hub 2"] = Color3.fromRGB(0, 10, 20),
-["Color Stroke"] = Color3.fromRGB(0, 30, 60),
-["Color Theme"] = Color3.fromRGB(0, 100, 200),
-["Color Text"] = Color3.fromRGB(255, 255, 255),
-["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
-		},
-		Verde = {
-			["Color Hub 1"] = ColorSequence.new({
-    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 30, 0)),
-    ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 80, 0)),
-    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 160, 0))
-}),
-["Color Hub 2"] = Color3.fromRGB(0, 15, 0),
-["Color Stroke"] = Color3.fromRGB(0, 50, 0),
-["Color Theme"] = Color3.fromRGB(0, 200, 0),
-["Color Text"] = Color3.fromRGB(255, 255, 255),
-["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
-		},
-		Rosa = {
-			["Color Hub 1"] = ColorSequence.new({
-    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(40, 0, 30)),
-    ColorSequenceKeypoint.new(0.50, Color3.fromRGB(100, 0, 80)),
-    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(200, 0, 160))
-}),
-["Color Hub 2"] = Color3.fromRGB(20, 0, 15),
-["Color Stroke"] = Color3.fromRGB(60, 0, 50),
-["Color Theme"] = Color3.fromRGB(255, 0, 200),
-["Color Text"] = Color3.fromRGB(255, 255, 255),
-["Color Dark Text"] = Color3.fromRGB(200, 180, 200)
+	Darker = {
+	["Color Hub 1"] = ColorSequence.new({
+		ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 15, 25)),
+		ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 30, 45)),
+		ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 15, 25))
+	}),
+	["Color Hub 2"] = Color3.fromRGB(0, 20, 30),
+	["Color Stroke"] = Color3.fromRGB(0, 80, 120),
+	["Color Theme"] = Color3.fromRGB(0, 150, 220),
+	["Color Text"] = Color3.fromRGB(170, 230, 255),
+	["Color Dark Text"] = Color3.fromRGB(120, 200, 240)
+},
+Dark = {
+	["Color Hub 1"] = ColorSequence.new({
+		ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 18, 28)),
+		ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 35, 50)),
+		ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 18, 28))
+	}),
+	["Color Hub 2"] = Color3.fromRGB(0, 25, 35),
+	["Color Stroke"] = Color3.fromRGB(0, 100, 150),
+	["Color Theme"] = Color3.fromRGB(0, 170, 255),
+	["Color Text"] = Color3.fromRGB(180, 240, 255),
+	["Color Dark Text"] = Color3.fromRGB(140, 220, 255)
+},
+Blue = {
+	["Color Hub 1"] = ColorSequence.new({
+		ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 20, 30)),
+		ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 40, 60)),
+		ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 20, 30))
+	}),
+	["Color Hub 2"] = Color3.fromRGB(0, 30, 45),
+	["Color Stroke"] = Color3.fromRGB(0, 120, 180),
+	["Color Theme"] = Color3.fromRGB(0, 180, 255),
+	["Color Text"] = Color3.fromRGB(190, 240, 255),
+	["Color Dark Text"] = Color3.fromRGB(150, 220, 255),
+	["Color Dark Blue"] = Color3.fromRGB(0, 140, 210),
+	["Color Hub 9"] = Color3.fromRGB(0, 0, 0),
+	["Color Dark Cyan"] = Color3.fromRGB(0, 160, 220)
 		}
 	},
 	Info = {
-		Version = "1.1.0"
+		Version = "1.2.0"
 	},
 	Save = {
 		UISize = {550, 380},
 		TabSize = 160,
-		Theme = "Darker"
+		Theme = "Blue"
 	},
 	Settings = {},
 	Connection = {},
@@ -99,7 +68,8 @@ local redzlib = {
 	Flags = {},
 	Tabs = {},
 	Icons = (function()
-	  return {
+	  -- This file was @generated by Tarmac. It is not intended for manual editing.
+		return {
 			["accessibility"] = "rbxassetid://10709751939",
 			["activity"] = "rbxassetid://10709752035",
 			["airvent"] = "rbxassetid://10709752131",
@@ -1236,7 +1206,7 @@ end
 
 AddEle("Corner", function(parent, CornerRadius)
 	local New = SetProps(Create("UICorner", parent, {
-		CornerRadius = CornerRadius or UDim.new(0, 12)
+		CornerRadius = CornerRadius or UDim.new(0, 7)
 	}), props)
 	return New
 end)
@@ -1259,16 +1229,34 @@ AddEle("Button", function(parent, props, ...)
 		BackgroundColor3 = Theme["Color Hub 2"],
 		AutoButtonColor = false
 	}), props), "Frame")
-	
+
+	local OriginalSize = New.Size
+	local IsMouseOver = false
+
 	New.MouseEnter:Connect(function()
-		CreateTween({New, "BackgroundTransparency", 0.4, 0.2})
+		IsMouseOver = true
+		New.BackgroundTransparency = 0.4
 	end)
+	
 	New.MouseLeave:Connect(function()
-		CreateTween({New, "BackgroundTransparency", 0, 0.2})
+		IsMouseOver = false
+		New.BackgroundTransparency = 0
 	end)
+
+	New.MouseButton1Down:Connect(function()
+		CreateTween({New, "Size", OriginalSize - UDim2.fromOffset(4, 2), 0.1})
+		CreateTween({New, "BackgroundTransparency", 0.6, 0.1})
+	end)
+
+	New.MouseButton1Up:Connect(function()
+		CreateTween({New, "Size", OriginalSize, 0.15})
+		CreateTween({New, "BackgroundTransparency", IsMouseOver and 0.4 or 0, 0.15})
+	end)
+
 	if args[1] then
 		New.Activated:Connect(args[1])
 	end
+
 	return New
 end)
 
@@ -1282,7 +1270,7 @@ end)
 
 local function ButtonFrame(Instance, Title, Description, HolderSize)
 	local TitleL = InsertTheme(Create("TextLabel", {
-		Font = Enum.Font.GothamMedium,
+		Font = Enum.Font.FredokaOne,
 		TextColor3 = Theme["Color Text"],
 		Size = UDim2.new(1, -20),
 		AutomaticSize = "Y",
@@ -1290,7 +1278,7 @@ local function ButtonFrame(Instance, Title, Description, HolderSize)
 		AnchorPoint = Vector2.new(0, 0.5),
 		BackgroundTransparency = 1,
 		TextTruncate = "AtEnd",
-		TextSize = 12,
+		TextSize = 10,
 		TextXAlignment = "Left",
 		Text = "",
 		RichText = true
@@ -1304,7 +1292,7 @@ local function ButtonFrame(Instance, Title, Description, HolderSize)
 		Position = UDim2.new(0, 12, 0, 15),
 		BackgroundTransparency = 1,
 		TextWrapped = true,
-		TextSize = 9,
+		TextSize = 8,
 		TextXAlignment = "Left",
 		Text = "",
 		RichText = true
@@ -1314,7 +1302,7 @@ local function ButtonFrame(Instance, Title, Description, HolderSize)
 		Size = UDim2.new(1, 0, 0, 25),
 		AutomaticSize = "Y",
 		Name = "Option"
-	})Make("Corner", Frame, UDim.new(0, 8))
+	})Make("Corner", Frame, UDim.new(0, 6))
 	
 	LabelHolder = Create("Frame", Frame, {
 		AutomaticSize = "Y",
@@ -1376,6 +1364,7 @@ local function GetColor(Instance)
 	return ""
 end
 
+-- /////////// --
 function redzlib:GetIcon(index)
 	if type(index) ~= "string" or index:find("rbxassetid://") or #index == 0 then
 		return index
@@ -1384,11 +1373,8 @@ function redzlib:GetIcon(index)
 	local firstMatch = nil
 	index = string.lower(index):gsub("lucide", ""):gsub("-", "")
 	
-	if self.Icons[index] then
-	  return self.Icons[index]
-	end
-	
 	for Name, Icon in self.Icons do
+		Name = Name:gsub("lucide", ""):gsub("-", "")
 		if Name == index then
 			return Icon
 		elseif not firstMatch and Name:find(index, 1, true) then
@@ -1431,6 +1417,139 @@ function redzlib:SetScale(NewScale)
 	UIScale, ScreenGui.Scale.Scale = NewScale, NewScale
 end
 
+local NotificationContainer = Create("Frame", ScreenGui, {
+	Name = "NotificationContainer",
+	Size = UDim2.new(0, 280, 1, 0),
+	Position = UDim2.new(1, -300, 1, -20),
+	AnchorPoint = Vector2.new(0, 1),
+	BackgroundTransparency = 1,
+	ZIndex = 999
+}, {
+	Create("UIListLayout", {
+		SortOrder = "LayoutOrder",
+		Padding = UDim.new(0, 8),
+		VerticalAlignment = "Bottom"
+	})
+})
+
+function redzlib:Notify(Configs)
+	local Title = Configs[1] or Configs.Title or "Notification"
+	local Description = Configs[2] or Configs.Description or Configs.Text or ""
+	local Duration = Configs[3] or Configs.Duration or 5
+	local Type = Configs.Type or "Info"
+	local Image = Configs.Image or "rbxassetid://113449060491896"
+	
+	local Colors = {
+		Info = Color3.fromRGB(0, 150, 220),
+		Success = Color3.fromRGB(0, 180, 120),
+		Warning = Color3.fromRGB(255, 193, 7),
+		Error = Color3.fromRGB(255, 50, 50)
+	}
+	
+	local TypeColor = Colors[Type] or Colors.Info
+	
+	local NotificationFrame = Create("Frame", NotificationContainer, {
+		Size = UDim2.new(1, 0, 0, 45),
+		BackgroundColor3 = Color3.fromRGB(15, 15, 15),
+		BackgroundTransparency = 0,
+		BorderSizePixel = 0,
+		ClipsDescendants = true
+	})
+	
+	Make("Corner", NotificationFrame, UDim.new(0, 12))
+	
+	local NotificationStroke = Create("UIStroke", NotificationFrame, {
+		Color = Color3.fromRGB(42, 38, 43),
+		Thickness = 2,
+		ApplyStrokeMode = "Border"
+	})
+	
+	local TitleLabel = Create("TextLabel", NotificationFrame, {
+		Size = UDim2.new(1, -50, 0, 16), 
+		Position = UDim2.new(0, 44, 0, 4),
+		BackgroundTransparency = 1,
+		Text = Title,
+		TextColor3 = Color3.fromRGB(255, 255, 255),
+		TextSize = 11,
+		Font = Enum.Font.GothamBold,
+		TextXAlignment = "Left",
+		TextTruncate = "AtEnd"
+	})
+	
+	local DescLabel = Create("TextLabel", NotificationFrame, {
+		Size = UDim2.new(1, -50, 0, 20), 
+		Position = UDim2.new(0, 44, 0, 15), 
+		BackgroundTransparency = 1,
+		Text = Description,
+		TextColor3 = Color3.fromRGB(180, 180, 180),
+		TextSize = 9,
+		Font = Enum.Font.Gotham,
+		TextXAlignment = "Left",
+		TextWrapped = true
+	})
+	
+	local Icon = Create("ImageLabel", NotificationFrame, {
+		Name = "NotificationIcon",
+		Size = UDim2.new(0, 16, 0, 16),
+		Position = UDim2.new(0, 6, 0.5, -20),
+		BackgroundTransparency = 1,
+		Image = Image,
+		ZIndex = 1000
+	})
+	
+	local CounterLabel = Create("TextLabel", NotificationFrame, {
+		Size = UDim2.new(0, 30, 0, 16),
+		Position = UDim2.new(1, -35, 0, 4),
+		BackgroundTransparency = 1,
+		Text = tostring(Duration),
+		TextColor3 = TypeColor,
+		TextSize = 10,
+		Font = Enum.Font.GothamBold,
+		TextXAlignment = "Right"
+	})
+	
+	local function RemoveNotification()
+		CreateTween({NotificationFrame, "Position", UDim2.new(1, 50, NotificationFrame.Position.Y.Scale, 0), 0.3})
+		CreateTween({NotificationFrame, "BackgroundTransparency", 1, 0.3})
+		CreateTween({NotificationStroke, "Transparency", 1, 0.3, true})
+		NotificationFrame:Destroy()
+	end
+	
+	NotificationFrame.Position = UDim2.new(1, 50, 0, 0)
+	CreateTween({NotificationFrame, "Position", UDim2.new(0, 0, 0, 0), 0.4})
+	
+	if Duration > 0 then
+		local timeLeft = Duration
+		local updateInterval = 0.1
+		local connection
+		
+		connection = task.spawn(function()
+			while timeLeft > 0 do
+				task.wait(updateInterval)
+				timeLeft = timeLeft - updateInterval
+				
+				if timeLeft <= 0 then
+					CounterLabel.Text = "0.0"
+					task.wait(0.1)
+					if NotificationFrame and NotificationFrame.Parent then
+						RemoveNotification()
+					end
+					break
+				else
+					CounterLabel.Text = string.format("%.1f", timeLeft)
+				end
+			end
+		end)
+	end
+	
+	local Notification = {}
+	function Notification:Remove()
+		RemoveNotification()
+	end
+	
+	return Notification
+end
+
 function redzlib:MakeWindow(Configs)
 	local WTitle = Configs[1] or Configs.Name or Configs.Title or "redz Library V5"
 	local WMiniText = Configs[2] or Configs.SubTitle or "by : redz9999"
@@ -1457,15 +1576,13 @@ function redzlib:MakeWindow(Configs)
 	local MainFrame = InsertTheme(Create("ImageButton", ScreenGui, {
 		Size = UDim2.fromOffset(UISizeX, UISizeY),
 		Position = UDim2.new(0.5, -UISizeX/2, 0.5, -UISizeY/2),
-		BackgroundTransparency = 0.03,
+		BackgroundTransparency = 0.15,
 		Name = "Hub"
 	}), "Main")
 	Make("Gradient", MainFrame, {
 		Rotation = 45
 	})MakeDrag(MainFrame)
-	
-	local MainCorner = Make("Corner", MainFrame, UDim.new(0, 15))
-	
+	local MainCorner = Make("Corner", MainFrame)
 	local Components = Create("Folder", MainFrame, {
 		Name = "Components"
 	})
@@ -1475,7 +1592,7 @@ function redzlib:MakeWindow(Configs)
 	})
 	
 	local TopBar = Create("Frame", Components, {
-		Size = UDim2.new(1, 0, 0, 35),
+		Size = UDim2.new(1, 0, 0, 28),
 		BackgroundTransparency = 1,
 		Name = "Top Bar"
 	})
@@ -1486,10 +1603,10 @@ function redzlib:MakeWindow(Configs)
 		AutomaticSize = "XY",
 		Text = WTitle,
 		TextXAlignment = "Left",
-		TextSize = 16,
+		TextSize = 12,
 		TextColor3 = Theme["Color Text"],
 		BackgroundTransparency = 1,
-		Font = Enum.Font.GothamBold,
+		Font = Enum.Font.FredokaOne,
 		Name = "Title"
 	}, {
 		InsertTheme(Create("TextLabel", {
@@ -1498,11 +1615,11 @@ function redzlib:MakeWindow(Configs)
 			AnchorPoint = Vector2.new(0, 1),
 			Position = UDim2.new(1, 5, 0.9),
 			Text = WMiniText,
-			TextColor3 = Theme["Color Dark Text"],
+			TextColor3 = Theme["Color Dark Cyan"],
 			BackgroundTransparency = 1,
 			TextXAlignment = "Left",
 			TextYAlignment = "Bottom",
-			TextSize = 10,
+			TextSize = 9,
 			Font = Enum.Font.Gotham,
 			Name = "SubTitle"
 		}), "DarkText")
@@ -1540,7 +1657,126 @@ function redzlib:MakeWindow(Configs)
 		ClipsDescendants = true,
 		Name = "Containers"
 	})
+
+	local ParticleContainer = Create("Frame", Containers, {
+		Size = UDim2.new(1, 0, 1, 0),
+		BackgroundTransparency = 1,
+		Name = "ThemeParticles",
+		ZIndex = -5,
+		ClipsDescendants = true
+	})
 	
+	local ParticleConfig = {
+		MaxParticles = 30,
+		SpawnRate = 0.1,
+		ParticleSize = {Min = 2, Max = 4},
+		ParticleSpeed = {Min = 6, Max = 12},
+		ParticleLifetime = 6
+	}
+
+	local ActiveParticles = {}
+	local LastSpawn = 0
+
+	local function CreateCyberpunkParticle()
+		if #ActiveParticles >= ParticleConfig.MaxParticles then return end
+		
+		local containerSize = ParticleContainer.AbsoluteSize
+		local startX = math.random(10, containerSize.X - 10)
+		local startY = containerSize.Y + 20
+		
+		local size = math.random(ParticleConfig.ParticleSize.Min, ParticleConfig.ParticleSize.Max)
+		local speed = math.random(ParticleConfig.ParticleSpeed.Min, ParticleConfig.ParticleSpeed.Max)
+		
+		local particleColor = Theme["Color Theme"]
+		
+		local Particle = Create("Frame", ParticleContainer, {
+			Size = UDim2.fromOffset(size, size),
+			Position = UDim2.fromOffset(startX, startY),
+			BackgroundColor3 = particleColor,
+			BackgroundTransparency = 0.2,
+			BorderSizePixel = 0
+		})
+		
+		Create("UICorner", Particle, {
+			CornerRadius = UDim.new(0.5, 0)
+		})
+		
+		local Glow = Create("Frame", Particle, {
+			Size = UDim2.new(1, 6, 1, 6),
+			Position = UDim2.new(0.5, 0, 0.5, 0),
+			AnchorPoint = Vector2.new(0.5, 0.5),
+			BackgroundColor3 = particleColor,
+			BackgroundTransparency = 0.7,
+			ZIndex = -1
+		})
+		
+		Create("UICorner", Glow, {
+			CornerRadius = UDim.new(0.5, 0)
+		})
+		
+		local ParticleData = {
+			Frame = Particle,
+			Glow = Glow,
+			StartTime = tick(),
+			Speed = speed,
+			Direction = Vector2.new(0, -speed),
+			OriginalColor = particleColor
+		}
+		
+		Particle.BackgroundTransparency = 1
+		Glow.BackgroundTransparency = 1
+		CreateTween({Particle, "BackgroundTransparency", 0.2, 0.8})
+		CreateTween({Glow, "BackgroundTransparency", 0.7, 0.8})
+		
+		table.insert(ActiveParticles, ParticleData)
+	end
+
+	local function UpdateCyberpunkParticles()
+		local containerSize = ParticleContainer.AbsoluteSize
+		
+		for i = #ActiveParticles, 1, -1 do
+			local particle = ActiveParticles[i]
+			local elapsed = tick() - particle.StartTime
+			if elapsed >= ParticleConfig.ParticleLifetime or 
+			   particle.Frame.Position.Y.Offset < -20 then
+
+				CreateTween({particle.Frame, "BackgroundTransparency", 1, 0.5})
+				CreateTween({particle.Glow, "BackgroundTransparency", 1, 0.5})
+				
+				task.spawn(function()
+					task.wait(0.5)
+					if particle.Frame and particle.Frame.Parent then
+						particle.Frame:Destroy()
+					end
+				end)
+				
+				table.remove(ActiveParticles, i)
+			else
+				local currentPos = particle.Frame.Position
+				local newY = currentPos.Y.Offset + particle.Direction.Y * 0.016
+				
+				particle.Frame.Position = UDim2.fromOffset(currentPos.X.Offset, newY)
+				local lifeRatio = elapsed / ParticleConfig.ParticleLifetime
+				if lifeRatio > 0.8 then
+					local fadeAlpha = 0.2 * (1 - ((lifeRatio - 0.8) / 0.2))
+					particle.Frame.BackgroundTransparency = math.max(1 - fadeAlpha, 0.95)
+				end
+			end
+		end
+	end
+
+	local function SpawnCyberpunkSystem()
+		if tick() - LastSpawn >= ParticleConfig.SpawnRate and MainFrame.Visible then
+			CreateCyberpunkParticle()
+			LastSpawn = tick()
+		end
+	end
+
+	local ParticleConnection = RunService.Heartbeat:Connect(function()
+		UpdateCyberpunkParticles()
+		SpawnCyberpunkSystem()
+	end)
+
 	local ControlSize1, ControlSize2 = MakeDrag(Create("ImageButton", MainFrame, {
 		Size = UDim2.new(0, 35, 0, 35),
 		Position = MainFrame.Size,
@@ -1587,7 +1823,7 @@ function redzlib:MakeWindow(Configs)
 	})
 	
 	local CloseButton = Create("ImageButton", {
-		Size = UDim2.new(0, 16, 0, 16),
+		Size = UDim2.new(0, 14, 0, 14),
 		Position = UDim2.new(1, -10, 0.5),
 		AnchorPoint = Vector2.new(1, 0.5),
 		BackgroundTransparency = 1,
@@ -1602,24 +1838,26 @@ function redzlib:MakeWindow(Configs)
 		Name = "Minimize"
 	})
 	
+	-- BOTÃO DE CONFIGURAÇÕES ADICIONADO AQUI
 	local ConfigButton = SetProps(CloseButton:Clone(), {
 		Position = UDim2.new(1, -60, 0.5),
-		Image = "rbxassetid://10734950309",
+		Image = "rbxassetid://10734950309", -- Ícone de configurações
 		Name = "Config"
 	})
-	
+
 	SetChildren(ButtonsFolder, {
 		CloseButton,
 		MinimizeButton,
-		ConfigButton
+		ConfigButton -- Adicionado o botão de configurações
 	})
 	
 	local Minimized, SaveSize, WaitClick
 	local Window, FirstTab = {}, false
+	
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
 			Title = "Close",
-			Text = "You Want Close Ui?",
+			Text = "Deseja realmente fechar o Lyra Hub? Ele contém recursos essenciais e fechar agora pode interromper funções importantes, causar falhas ou perder suas configurações. Cuidado antes de prosseguir!",
 			Options = {
 				{"Confirm", function()
 					ScreenGui:Destroy()
@@ -1628,6 +1866,7 @@ function redzlib:MakeWindow(Configs)
 			}
 		})
 	end
+	
 	function Window:MinimizeBtn()
 		if WaitClick then return end
 		WaitClick = true
@@ -1637,49 +1876,106 @@ function redzlib:MakeWindow(Configs)
 			CreateTween({MainFrame, "Size", SaveSize, 0.25, true})
 			ControlSize1.Visible = true
 			ControlSize2.Visible = true
+			for _, particle in pairs(ActiveParticles) do
+				if particle.Frame and particle.Frame.Parent then
+					particle.Frame.Visible = true
+				end
+			end
 			Minimized = false
 		else
 			MinimizeButton.Image = "rbxassetid://10734924532"
 			SaveSize = MainFrame.Size
 			ControlSize1.Visible = false
 			ControlSize2.Visible = false
-			CreateTween({MainFrame, "Size", UDim2.fromOffset(MainFrame.Size.X.Offset, 35), 0.25, true})
+			for _, particle in pairs(ActiveParticles) do
+				if particle.Frame and particle.Frame.Parent then
+					particle.Frame.Visible = false
+				end
+			end
+			CreateTween({MainFrame, "Size", UDim2.fromOffset(MainFrame.Size.X.Offset, 28), 0.25, true})
 			Minimized = true
 		end
 		
 		WaitClick = false
 	end
+	
+	function Window:ConfigBtn()
+		-- Criar janela de configurações de tema
+		local ConfigDialog = Window:Dialog({
+			Title = "Configurações de Tema",
+			Text = "Escolha o tema para a interface:",
+			Options = {
+				{"Darker", function()
+					redzlib:SetTheme("Darker")
+				end},
+				{"Dark", function()
+					redzlib:SetTheme("Dark")
+				end},
+				{"Blue", function()
+					redzlib:SetTheme("Blue")
+				end},
+				{"Cancel"}
+			}
+		})
+	end
+	
 	function Window:Minimize()
 		MainFrame.Visible = not MainFrame.Visible
 	end
+
+	function Window:SetThemeParticles(enabled)
+		if enabled then
+			if not ParticleConnection then
+				ParticleConnection = RunService.Heartbeat:Connect(function()
+					UpdateCyberpunkParticles()
+					SpawnCyberpunkSystem()
+				end)
+			end
+			ParticleContainer.Visible = true
+		else
+			if ParticleConnection then
+				ParticleConnection:Disconnect()
+				ParticleConnection = nil
+			end
+			ParticleContainer.Visible = false
+		end
+	end
+
+	function Window:Minimize()
+		MainFrame.Visible = not MainFrame.Visible
+	end
+
 	function Window:AddMinimizeButton(Configs)
 		local Button = MakeDrag(Create("ImageButton", ScreenGui, {
-			Size = UDim2.fromOffset(40, 40),
+			Size = UDim2.fromOffset(12, 12),
 			Position = UDim2.fromScale(0.15, 0.15),
 			BackgroundTransparency = 1,
-			BackgroundColor3 = Theme["Color Hub 2"],
 			AutoButtonColor = false
 		}))
-		
+
 		local Stroke, Corner
+
 		if Configs.Corner then
-			Corner = Make("Corner", Button, UDim.new(0, 10))
+			Corner = Make("Corner", Button)
 			SetProps(Corner, Configs.Corner)
 		end
+
 		if Configs.Stroke then
 			Stroke = Make("Stroke", Button)
-			SetProps(Stroke, Configs.Corner)
+			SetProps(Stroke, Configs.Stroke)
 		end
-		
+
 		SetProps(Button, Configs.Button)
+
 		Button.Activated:Connect(Window.Minimize)
-		
+
 		return {
 			Stroke = Stroke,
 			Corner = Corner,
 			Button = Button
 		}
 	end
+	
 	function Window:Set(Val1, Val2)
 		if type(Val1) == "string" and type(Val2) == "string" then
 			Title.Text = Val1
@@ -1688,6 +1984,7 @@ function redzlib:MakeWindow(Configs)
 			Title.Text = Val1
 		end
 	end
+	
 	function Window:Dialog(Configs)
 		if MainFrame:FindFirstChild("Dialog") then return end
 		if Minimized then
@@ -1726,7 +2023,7 @@ function redzlib:MakeWindow(Configs)
 				BackgroundTransparency = 1,
 				TextWrapped = true
 			}), "DarkText")
-		})Make("Gradient", Frame, {Rotation = 270})Make("Corner", Frame, UDim.new(0, 10))
+		})Make("Gradient", Frame, {Rotation = 270})Make("Corner", Frame)
 		
 		local ButtonsHolder = Create("Frame", Frame, {
 			Size = UDim2.fromScale(1, 0.35),
@@ -1765,7 +2062,7 @@ function redzlib:MakeWindow(Configs)
 			
 			ButtonCount = ButtonCount + 1
 			local Button = Make("Button", ButtonsHolder)
-			Make("Corner", Button, UDim.new(0, 6))
+			Make("Corner", Button)
 			SetProps(Button, {
 				Text = Name,
 				Font = Enum.Font.GothamBold,
@@ -1792,6 +2089,7 @@ function redzlib:MakeWindow(Configs)
 		end)
 		return Dialog
 	end
+	
 	function Window:SelectTab(TabSelect)
 		if type(TabSelect) == "number" then
 			redzlib.Tabs[TabSelect].func:Enable()
@@ -1816,17 +2114,17 @@ function redzlib:MakeWindow(Configs)
 		end
 		
 		local TabSelect = Make("Button", MainScroll, {
-			Size = UDim2.new(1, 0, 0, 28)
-		})Make("Corner", TabSelect, UDim.new(0, 8))
+			Size = UDim2.new(1, 0, 0, 24)
+		})Make("Corner", TabSelect)
 		
 		local LabelTitle = InsertTheme(Create("TextLabel", TabSelect, {
 			Size = UDim2.new(1, TIcon and -25 or -15, 1),
 			Position = UDim2.fromOffset(TIcon and 25 or 15),
 			BackgroundTransparency = 1,
-			Font = Enum.Font.GothamMedium,
+			Font = Enum.Font.BuilderSansBold,
 			Text = TName,
 			TextColor3 = Theme["Color Text"],
-			TextSize = 11,
+			TextSize = 10,
 			TextXAlignment = Enum.TextXAlignment.Left,
 			TextTransparency = (FirstTab and 0.3) or 0,
 			TextTruncate = "AtEnd"
@@ -1834,7 +2132,7 @@ function redzlib:MakeWindow(Configs)
 		
 		local LabelIcon = InsertTheme(Create("ImageLabel", TabSelect, {
 			Position = UDim2.new(0, 8, 0.5),
-			Size = UDim2.new(0, 15, 0, 15),
+			Size = UDim2.new(0, 13, 0, 13),
 			AnchorPoint = Vector2.new(0, 0.5),
 			Image = TIcon or "",
 			BackgroundTransparency = 1,
@@ -1842,7 +2140,7 @@ function redzlib:MakeWindow(Configs)
 		}), "Text")
 		
 		local Selected = InsertTheme(Create("Frame", TabSelect, {
-			Size = FirstTab and UDim2.new(0, 4, 0, 4) or UDim2.new(0, 4, 0, 15),
+			Size = FirstTab and UDim2.new(0, 4, 0, 4) or UDim2.new(0, 4, 0, 13),
 			Position = UDim2.new(0, 1, 0.5),
 			AnchorPoint = Vector2.new(0, 0.5),
 			BackgroundColor3 = Theme["Color Theme"],
@@ -1894,7 +2192,7 @@ function redzlib:MakeWindow(Configs)
 			CreateTween({Container, "Size", UDim2.new(1, 0, 1, 0), 0.3})
 			CreateTween({LabelTitle, "TextTransparency", 0, 0.35})
 			CreateTween({LabelIcon, "ImageTransparency", 0, 0.35})
-			CreateTween({Selected, "Size", UDim2.new(0, 4, 0, 15), 0.35})
+			CreateTween({Selected, "Size", UDim2.new(0, 4, 0, 13), 0.35})
 			CreateTween({Selected, "BackgroundTransparency", 0, 0.35})
 		end
 		TabSelect.Activated:Connect(Tabs)
@@ -1904,7 +2202,7 @@ function redzlib:MakeWindow(Configs)
 		table.insert(redzlib.Tabs, {TabInfo = {Name = TName, Icon = TIcon}, func = Tab, Cont = Container})
 		Tab.Cont = Container
 		
-		function Tab:Disable()
+		function  Tab:Disable()
 			Container.Parent = nil
 			CreateTween({LabelTitle, "TextTransparency", 0.3, 0.35})
 			CreateTween({LabelIcon, "ImageTransparency", 0.3, 0.35})
@@ -1930,14 +2228,14 @@ function redzlib:MakeWindow(Configs)
 			})
 			
 			local SectionLabel = InsertTheme(Create("TextLabel", SectionFrame, {
-				Font = Enum.Font.GothamBold,
+				Font = Enum.Font.BuilderSansExtraBold,
 				Text = SectionName,
-				TextColor3 = Theme["Color Text"],
+				TextColor3 = Theme["Color Dark Blue"],
 				Size = UDim2.new(1, -25, 1, 0),
-				Position = UDim2.new(0, 5),
+				Position = UDim2.new(0, 30),
 				BackgroundTransparency = 1,
 				TextTruncate = "AtEnd",
-				TextSize = 14,
+				TextSize = 11,
 				TextXAlignment = "Left"
 			}), "Text")
 			
@@ -1957,6 +2255,7 @@ function redzlib:MakeWindow(Configs)
 			end
 			return Section
 		end
+		
 		function Tab:AddParagraph(Configs)
 			local PName = Configs[1] or Configs.Title or "Paragraph"
 			local PDesc = Configs[2] or Configs.Text or ""
@@ -1982,19 +2281,20 @@ function redzlib:MakeWindow(Configs)
 			end
 			return Paragraph
 		end
+		
 		function Tab:AddButton(Configs)
 			local BName = Configs[1] or Configs.Name or Configs.Title or "Button!"
 			local BDescription = Configs.Desc or Configs.Description or ""
 			local Callback = Funcs:GetCallback(Configs, 2)
 			
 			local FButton, LabelFunc = ButtonFrame(Container, BName, BDescription, UDim2.new(1, -20))
-			
+
 			local ButtonIcon = Create("ImageLabel", FButton, {
-				Size = UDim2.new(0, 16, 0, 16),
+				Size = UDim2.new(0, 14, 0, 14),
 				Position = UDim2.new(1, -10, 0.5),
 				AnchorPoint = Vector2.new(1, 0.5),
 				BackgroundTransparency = 1,
-				Image = "rbxassetid://10709791437"
+				Image = "rbxassetid://6422245657"
 			})
 			
 			FButton.Activated:Connect(function()
@@ -2017,6 +2317,7 @@ function redzlib:MakeWindow(Configs)
 			end
 			return Button
 		end
+		
 		function Tab:AddToggle(Configs)
 			local TName = Configs[1] or Configs.Name or Configs.Title or "Toggle"
 			local TDesc = Configs.Desc or Configs.Description or ""
@@ -2092,6 +2393,7 @@ function redzlib:MakeWindow(Configs)
 			end
 			return Toggle
 		end
+		
 		function Tab:AddDropdown(Configs)
 			local DName = Configs[1] or Configs.Name or Configs.Title or "Dropdown"
 			local DDesc = Configs.Desc or Configs.Description or ""
@@ -2108,7 +2410,7 @@ function redzlib:MakeWindow(Configs)
 				Position = UDim2.new(1, -10, 0.5),
 				AnchorPoint = Vector2.new(1, 0.5),
 				BackgroundColor3 = Theme["Color Stroke"]
-			}), "Stroke")Make("Corner", SelectedFrame, UDim.new(0, 6))
+			}), "Stroke")Make("Corner", SelectedFrame, UDim.new(0, 4))
 			
 			local ActiveLabel = InsertTheme(Create("TextLabel", SelectedFrame, {
 				Size = UDim2.new(0.85, 0, 0.85, 0),
@@ -2145,7 +2447,7 @@ function redzlib:MakeWindow(Configs)
 				Name = "DropdownFrame",
 				ClipsDescendants = true,
 				Active = true
-			})Make("Corner", DropFrame, UDim.new(0, 8))Make("Stroke", DropFrame)Make("Gradient", DropFrame, {Rotation = 60})
+			})Make("Corner", DropFrame)Make("Stroke", DropFrame)Make("Gradient", DropFrame, {Rotation = 60})
 			
 			local ScrollFrame = InsertTheme(Create("ScrollingFrame", DropFrame, {
 				ScrollBarImageColor3 = Theme["Color Theme"],
@@ -2320,7 +2622,7 @@ function redzlib:MakeWindow(Configs)
 						Size = UDim2.new(1, 0, 0, 21),
 						Position = UDim2.new(0, 0, 0.5),
 						AnchorPoint = Vector2.new(0, 0.5)
-					})Make("Corner", Button, UDim.new(0, 5))
+					})Make("Corner", Button, UDim.new(0, 4))
 					
 					local IsSelected = InsertTheme(Create("Frame", Button, {
 						Position = UDim2.new(0, 1, 0.5),
@@ -2335,7 +2637,7 @@ function redzlib:MakeWindow(Configs)
 						Position = UDim2.new(0, 10),
 						Text = Name,
 						TextColor3 = Theme["Color Text"],
-						Font = Enum.Font.GothamBold,
+						Font = Enum.Font.FredokaOne,
 						TextXAlignment = "Left",
 						BackgroundTransparency = 1,
 						TextTransparency = 0.4
@@ -2436,6 +2738,7 @@ function redzlib:MakeWindow(Configs)
 			end
 			return Dropdown
 		end
+		
 		function Tab:AddSlider(Configs)
 			local SName = Configs[1] or Configs.Name or Configs.Title or "Slider!"
 			local SDesc = Configs.Desc or Configs.Description or ""
@@ -2464,13 +2767,13 @@ function redzlib:MakeWindow(Configs)
 				Size = UDim2.new(1, -20, 0, 6),
 				Position = UDim2.new(0.5, 0, 0.5),
 				AnchorPoint = Vector2.new(0.5, 0.5)
-			}), "Stroke")Make("Corner", SliderBar, UDim.new(0, 3))
+			}), "Stroke")Make("Corner", SliderBar)
 			
 			local Indicator = InsertTheme(Create("Frame", SliderBar, {
 				BackgroundColor3 = Theme["Color Theme"],
 				Size = UDim2.fromScale(0.3, 1),
 				BorderSizePixel = 0
-			}), "Theme")Make("Corner", Indicator, UDim.new(0, 3))
+			}), "Theme")Make("Corner", Indicator)
 			
 			local SliderIcon = Create("Frame", SliderBar, {
 				Size = UDim2.new(0, 6, 0, 12),
@@ -2478,7 +2781,7 @@ function redzlib:MakeWindow(Configs)
 				Position = UDim2.fromScale(0.3, 0.5),
 				AnchorPoint = Vector2.new(0.5, 0.5),
 				BackgroundTransparency = 0.2
-			})Make("Corner", SliderIcon, UDim.new(0, 2))
+			})Make("Corner", SliderIcon)
 			
 			local LabelVal = InsertTheme(Create("TextLabel", SliderHolder, {
 				Size = UDim2.new(0, 14, 0, 14),
@@ -2570,6 +2873,7 @@ function redzlib:MakeWindow(Configs)
 			function Slider:Destroy() Button:Destroy() end
 			return Slider
 		end
+		
 		function Tab:AddTextBox(Configs)
 			local TName = Configs[1] or Configs.Name or Configs.Title or "Text Box"
 			local TDesc = Configs.Desc or Configs.Description or ""
@@ -2589,7 +2893,7 @@ function redzlib:MakeWindow(Configs)
 				Position = UDim2.new(1, -10, 0.5),
 				AnchorPoint = Vector2.new(1, 0.5),
 				BackgroundColor3 = Theme["Color Stroke"]
-			}), "Stroke")Make("Corner", SelectedFrame, UDim.new(0, 6))
+			}), "Stroke")Make("Corner", SelectedFrame, UDim.new(0, 4))
 			
 			local TextBoxInput = InsertTheme(Create("TextBox", SelectedFrame, {
 				Size = UDim2.new(0.85, 0, 0.85, 0),
@@ -2636,307 +2940,233 @@ function redzlib:MakeWindow(Configs)
 			function TextBox:Destroy() Button:Destroy() end
 			return TextBox
 		end
+		
 		function Tab:AddDiscordInvite(Configs)
-			local Title = Configs[1] or Configs.Name or Configs.Title or "Discord"
-			local Desc = Configs.Desc or Configs.Description or ""
-			local Logo = Configs[2] or Configs.Logo or ""
-			local Invite = Configs[3] or Configs.Invite or ""
+			local Title = Configs[1] or Configs.Name or Configs.Title or "Discord Server"
+			local Description = Configs[2] or Configs.Desc or Configs.Description or ""
+			local Logo = Configs[3] or Configs.Icon or Configs.Logo or ""
+			local Invite = Configs[4] or Configs.Invite or Configs.Link or ""
+			local MembersOnline = Configs.Online or Configs.MembersOnline or 0
+			local TotalMembers = Configs.Members or Configs.TotalMembers or 0
+			local BannerImage = Configs.Banner or Configs.BannerImage or ""
 			
 			local InviteHolder = Create("Frame", Container, {
-				Size = UDim2.new(1, 0, 0, 80),
+				Size = UDim2.new(1, 0, 0, 148),
 				Name = "Option",
 				BackgroundTransparency = 1
 			})
 			
-			local InviteLabel = Create("TextLabel", InviteHolder, {
+			local InviteLabel = InsertTheme(Create("TextLabel", InviteHolder, {
 				Size = UDim2.new(1, 0, 0, 15),
 				Position = UDim2.new(0, 5),
-				TextColor3 = Color3.fromRGB(40, 150, 255),
+				TextColor3 = Color3.fromRGB(0, 150, 220),
 				Font = Enum.Font.GothamBold,
 				TextXAlignment = "Left",
 				BackgroundTransparency = 1,
-				TextSize = 10,
+				TextSize = 9,
 				Text = Invite
-			})
-			
-			local FrameHolder = InsertTheme(Create("Frame", InviteHolder, {
-				Size = UDim2.new(1, 0, 0, 65),
-				AnchorPoint = Vector2.new(0, 1),
-				Position = UDim2.new(0, 0, 1),
-				BackgroundColor3 = Theme["Color Hub 2"]
-			}), "Frame")Make("Corner", FrameHolder, UDim.new(0, 8))
-			
-			local ImageLabel = Create("ImageLabel", FrameHolder, {
-				Size = UDim2.new(0, 30, 0, 30),
-				Position = UDim2.new(0, 7, 0, 7),
-				Image = Logo,
-				BackgroundTransparency = 1
-			})Make("Corner", ImageLabel, UDim.new(0, 6))Make("Stroke", ImageLabel)
-			
-			local LTitle = InsertTheme(Create("TextLabel", FrameHolder, {
-				Size = UDim2.new(1, -52, 0, 15),
-				Position = UDim2.new(0, 44, 0, 7),
-				Font = Enum.Font.GothamBold,
-				TextColor3 = Theme["Color Text"],
-				TextXAlignment = "Left",
-				BackgroundTransparency = 1,
-				TextSize = 10,
-				Text = Title
 			}), "Text")
 			
-			local LDesc = InsertTheme(Create("TextLabel", FrameHolder, {
-				Size = UDim2.new(1, -52, 0, 0),
-				Position = UDim2.new(0, 44, 0, 22),
-				TextWrapped = "Y",
-				AutomaticSize = "Y",
-				Font = Enum.Font.Gotham,
-				TextColor3 = Theme["Color Dark Text"],
+			local MainFrame = InsertTheme(Create("Frame", InviteHolder, {
+				Size = UDim2.new(0, 178, 1, -15),
+				Position = UDim2.new(0, 5, 1, 0),
+				AnchorPoint = Vector2.new(0, 1),
+				BackgroundColor3 = Theme["Color Hub 2"],
+				ClipsDescendants = true
+			}), "Frame")
+			Make("Corner", MainFrame, UDim.new(0, 12))
+			Make("Stroke", MainFrame)
+			
+			local BannerArea = Create("ImageLabel", MainFrame, {
+				Size = UDim2.new(1, 0, 0.28, 0),
+				Image = BannerImage,
+				BackgroundColor3 = Color3.fromRGB(0, 150, 220),
+				BackgroundTransparency = BannerImage ~= "" and 1 or 0,
+				ScaleType = Enum.ScaleType.Crop
+			})
+			Make("Corner", BannerArea, UDim.new(0, 12))
+			
+			if BannerImage == "" then
+				local BannerGradient = Create("UIGradient", BannerArea, {
+					Rotation = -15,
+					Color = ColorSequence.new({
+						ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 80, 140)),
+						ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 120, 200))
+					})
+				})
+			end
+			
+			local ServerIcon = Create("ImageLabel", MainFrame, {
+				Size = UDim2.new(0, 33, 0, 33),
+				Position = UDim2.new(0, 10, 0.28, 0),
+				AnchorPoint = Vector2.new(0, 0.5),
+				Image = Logo,
+				BackgroundTransparency = Logo == "" and 1 or 0,
+				BackgroundColor3 = Theme["Color Hub 2"]
+			})
+			Make("Corner", ServerIcon, UDim.new(0, 8))
+			if Logo ~= "" then
+				Make("Stroke", ServerIcon, nil, Theme["Color Hub 2"], 2.2)
+			end
+			
+			local ServerTitle = InsertTheme(Create("TextLabel", MainFrame, {
+				Size = UDim2.new(1, -20, 0, 10),
+				Position = UDim2.new(0, 10, 0.44, 0),
 				TextXAlignment = "Left",
 				BackgroundTransparency = 1,
+				TextSize = 11,
+				Text = Title,
+				Font = Enum.Font.GothamBold,
+				TextColor3 = Theme["Color Text"]
+			}), "Text")
+			
+			local MembersFrame
+			if MembersOnline > 0 or TotalMembers > 0 then
+				MembersFrame = Create("Frame", MainFrame, {
+					Size = UDim2.new(1, -20, 0, 9),
+					Position = UDim2.new(0, 7, 0.52, 0),
+					BackgroundTransparency = 1
+				}, {
+					Create("UIListLayout", {
+						HorizontalAlignment = "Left",
+						VerticalAlignment = "Center",
+						FillDirection = "Horizontal",
+						Padding = UDim.new(0, 4)
+					}),
+					Create("UIPadding", {
+						PaddingLeft = UDim.new(0, 3),
+						PaddingRight = UDim.new(0, 10)
+					})
+				})
+				
+				local function CreateStatusIndicator(color, text)
+					local StatusFrame = Create("Frame", MembersFrame, {
+						Size = UDim2.new(0, 0, 1, 0),
+						AutomaticSize = "X",
+						BackgroundTransparency = 1
+					})
+					
+					local StatusDot = Create("Frame", StatusFrame, {
+						Size = UDim2.new(0, 3, 0, 3),
+						Position = UDim2.new(0, 5, 0.5, 0),
+						AnchorPoint = Vector2.new(0, 0.5),
+						BackgroundColor3 = color
+					})
+					Make("Corner", StatusDot, UDim.new(1, 0))
+					
+					local StatusText = InsertTheme(Create("TextLabel", StatusFrame, {
+						Size = UDim2.new(0, 0, 1, 0),
+						Position = UDim2.new(0, 12, 0.5, 0),
+						AnchorPoint = Vector2.new(0, 0.5),
+						AutomaticSize = "X",
+						BackgroundTransparency = 1,
+						TextSize = 7,
+						Text = text,
+						Font = Enum.Font.Gotham,
+						TextColor3 = Theme["Color Dark Text"]
+					}), "DarkText")
+				end
+				
+				if MembersOnline > 0 then
+					CreateStatusIndicator(Color3.fromRGB(0, 180, 120), MembersOnline .. " Online")
+				end
+				
+				if TotalMembers > 0 then
+					CreateStatusIndicator(Color3.fromRGB(100, 150, 200), TotalMembers .. " Members")
+				end
+			end
+			
+			local DescriptionLabel = InsertTheme(Create("TextLabel", MainFrame, {
+				Size = UDim2.new(1, -60, 0, 8),
+				Position = UDim2.new(0, 10, MembersFrame and 0.6 or 0.56, 0),
+				TextXAlignment = "Left",
+				AutomaticSize = "Y",
+				BackgroundTransparency = 1,
 				TextSize = 8,
-				Text = Desc
+				Text = Description,
+				TextWrapped = true,
+				Font = Enum.Font.Gotham,
+				TextColor3 = Theme["Color Dark Text"]
 			}), "DarkText")
 			
-			local JoinButton = Create("TextButton", FrameHolder, {
-				Size = UDim2.new(1, -14, 0, 16),
-				AnchorPoint = Vector2.new(0.5, 1),
-				Position = UDim2.new(0.5, 0, 1, -7),
-				Text = "Join",
-				Font = Enum.Font.GothamBold,
-				TextSize = 12,
-				TextColor3 = Color3.fromRGB(220, 220, 220),
-				BackgroundColor3 = Color3.fromRGB(50, 150, 50)
-			})Make("Corner", JoinButton, UDim.new(0, 6))
+			local BottomSection = InsertTheme(Create("Frame", MainFrame, {
+				Size = UDim2.new(1, 0, Description == "" and 0.28 or 0.42, 0),
+				Position = UDim2.new(0, 0, 1, 0),
+				AnchorPoint = Vector2.new(0, 1),
+				BackgroundColor3 = Theme["Color Hub 2"],
+				BorderSizePixel = 0
+			}), "Frame")
 			
-			local ClickDelay
+			if Description ~= "" then
+				local BottomGradient = Create("UIGradient", BottomSection, {
+					Rotation = -90,
+					Transparency = NumberSequence.new({
+						NumberSequenceKeypoint.new(0.00, 0.00),
+						NumberSequenceKeypoint.new(0.60, 0.00),
+						NumberSequenceKeypoint.new(1.00, 1.00)
+					})
+				})
+			end
+			
+			local JoinButton = InsertTheme(Create("TextButton", BottomSection, {
+				Position = UDim2.new(0.5, 0, 1, -9),
+				Size = UDim2.new(1, -18, 0, 18),
+				AnchorPoint = Vector2.new(0.5, 1),
+				Text = "Join Server",
+				Font = Enum.Font.GothamBold,
+				TextSize = 10,
+				BackgroundColor3 = Color3.fromRGB(0, 150, 220),
+				TextColor3 = Theme["Color Text"]
+			}), "Text")
+			Make("Corner", JoinButton, UDim.new(0.5, 0))
+			
+			local clickCooldown = 0
 			JoinButton.Activated:Connect(function()
-				setclipboard(Invite)
-				if ClickDelay then return end
+				if tick() - clickCooldown < 5 then return end
+				clickCooldown = tick()
 				
-				ClickDelay = true
-				SetProps(JoinButton, {
-					Text = "Copied to Clipboard",
-					BackgroundColor3 = Color3.fromRGB(100, 100, 100),
-					TextColor3 = Color3.fromRGB(150, 150, 150)
-				})task.wait(5)
-				SetProps(JoinButton, {
-					Text = "Join",
-					BackgroundColor3 = Color3.fromRGB(50, 150, 50),
-					TextColor3 = Color3.fromRGB(220, 220, 220)
-				})ClickDelay = false
+				local originalText = JoinButton.Text
+				JoinButton.Text = "Copied to Clipboard!"
+				
+				if setclipboard then
+					setclipboard(Invite)
+				end
+				
+				task.wait(4)
+				if JoinButton and JoinButton.Parent then
+					JoinButton.Text = originalText
+				end
 			end)
 			
 			local DiscordInvite = {}
-			function DiscordInvite:Destroy() InviteHolder:Destroy() end
-			function DiscordInvite:Visible(...) Funcs:ToggleVisible(InviteHolder, ...) end
+			function DiscordInvite:Destroy() 
+				InviteHolder:Destroy() 
+			end
+			function DiscordInvite:Visible(...) 
+				Funcs:ToggleVisible(InviteHolder, ...) 
+			end
+			function DiscordInvite:Set(newTitle, newDesc, newInvite)
+				if newTitle then
+					ServerTitle.Text = newTitle
+				end
+				if newDesc then
+					DescriptionLabel.Text = newDesc
+				end
+				if newInvite then
+					InviteLabel.Text = newInvite
+				end
+			end
+			
 			return DiscordInvite
 		end
+		
 		return Tab
 	end
 	
-	local ConfigOpen = false
-	local ConfigFrame = Create("Frame", ScreenGui, {
-		Size = UDim2.new(0, 300, 0, 400),
-		Position = UDim2.new(0.5, -150, 0.5, -200),
-		BackgroundTransparency = 0.03,
-		Visible = false,
-		Name = "Config"
-	})Make("Gradient", ConfigFrame, {Rotation = 45})Make("Corner", ConfigFrame, UDim.new(0, 15))MakeDrag(ConfigFrame)
-	
-	local ConfigTitle = InsertTheme(Create("TextLabel", ConfigFrame, {
-		Size = UDim2.new(1, 0, 0, 35),
-		Position = UDim2.new(0, 0, 0, 0),
-		Text = "Configurações",
-		TextColor3 = Theme["Color Text"],
-		BackgroundTransparency = 1,
-		Font = Enum.Font.GothamBold,
-		TextSize = 16
-	}), "Text")
-	
-	local ConfigScroll = InsertTheme(Create("ScrollingFrame", ConfigFrame, {
-		Size = UDim2.new(1, 0, 1, -35),
-		Position = UDim2.new(0, 0, 0, 35),
-		ScrollBarImageColor3 = Theme["Color Theme"],
-		ScrollBarThickness = 1.5,
-		BackgroundTransparency = 1,
-		ScrollBarImageTransparency = 0.2,
-		AutomaticCanvasSize = "Y",
-		ScrollingDirection = "Y",
-		BorderSizePixel = 0,
-		CanvasSize = UDim2.new()
-	}, {
-		Create("UIPadding", {
-			PaddingLeft = UDim.new(0, 10),
-			PaddingRight = UDim.new(0, 10),
-			PaddingTop = UDim.new(0, 10),
-			PaddingBottom = UDim.new(0, 10)
-		}), Create("UIListLayout", {
-			Padding = UDim.new(0, 5)
-		})
-	}), "ScrollBar")
-	
-	local function CreateConfigOption(parent, title, desc, optionType, options, callback)
-		local frame, labelFunc = ButtonFrame(parent, title, desc, UDim2.new(1, -20))
-		
-		if optionType == "RGBTitle" then
-			local colorBox = InsertTheme(Create("TextBox", frame, {
-				Size = UDim2.new(0, 80, 0, 18),
-				Position = UDim2.new(1, -10, 0.5),
-				AnchorPoint = Vector2.new(1, 0.5),
-				BackgroundColor3 = Theme["Color Stroke"],
-				TextColor3 = Theme["Color Text"],
-				PlaceholderText = "RGB",
-				Text = "",
-				ClearTextOnFocus = false
-			}), "Text")Make("Corner", colorBox, UDim.new(0, 4))
-			
-			colorBox.FocusLost:Connect(function()
-				local text = colorBox.Text
-				local r, g, b = text:match("(%d+),%s*(%d+),%s*(%d+)")
-				if r and g and b then
-					local color = Color3.fromRGB(tonumber(r), tonumber(g), tonumber(b))
-					callback(color)
-				end
-			end)
-			
-		elseif optionType == "RGBSubTitle" then
-			local colorBox = InsertTheme(Create("TextBox", frame, {
-				Size = UDim2.new(0, 80, 0, 18),
-				Position = UDim2.new(1, -10, 0.5),
-				AnchorPoint = Vector2.new(1, 0.5),
-				BackgroundColor3 = Theme["Color Stroke"],
-				TextColor3 = Theme["Color Text"],
-				PlaceholderText = "RGB",
-				Text = "",
-				ClearTextOnFocus = false
-			}), "Text")Make("Corner", colorBox, UDim.new(0, 4))
-			
-			colorBox.FocusLost:Connect(function()
-				local text = colorBox.Text
-				local r, g, b = text:match("(%d+),%s*(%d+),%s*(%d+)")
-				if r and g and b then
-					local color = Color3.fromRGB(tonumber(r), tonumber(g), tonumber(b))
-					callback(color)
-				end
-			end)
-			
-		elseif optionType == "Themes" then
-			local themeDropdown = InsertTheme(Create("Frame", frame, {
-				Size = UDim2.new(0, 100, 0, 18),
-				Position = UDim2.new(1, -10, 0.5),
-				AnchorPoint = Vector2.new(1, 0.5),
-				BackgroundColor3 = Theme["Color Stroke"]
-			}), "Stroke")Make("Corner", themeDropdown, UDim.new(0, 4))
-			
-			local themeLabel = InsertTheme(Create("TextLabel", themeDropdown, {
-				Size = UDim2.new(0.85, 0, 0.85, 0),
-				AnchorPoint = Vector2.new(0.5, 0.5),
-				Position = UDim2.new(0.5, 0, 0.5, 0),
-				BackgroundTransparency = 1,
-				Font = Enum.Font.GothamBold,
-				TextScaled = true,
-				TextColor3 = Theme["Color Text"],
-				Text = "Temas"
-			}), "Text")
-			
-			local themeArrow = Create("ImageLabel", themeDropdown, {
-				Size = UDim2.new(0, 12, 0, 12),
-				Position = UDim2.new(0, -5, 0.5),
-				AnchorPoint = Vector2.new(1, 0.5),
-				Image = "rbxassetid://10709791523",
-				BackgroundTransparency = 1
-			})
-			
-			local themeFrame = Create("Frame", ScreenGui, {
-				Size = UDim2.new(0, 100, 0, 0),
-				BackgroundTransparency = 0.1,
-				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-				AnchorPoint = Vector2.new(0, 1),
-				Name = "ThemeDropdown",
-				ClipsDescendants = true,
-				Active = true,
-				Visible = false
-			})Make("Corner", themeFrame, UDim.new(0, 8))Make("Stroke", themeFrame)Make("Gradient", themeFrame, {Rotation = 60})
-			
-			local themeScroll = InsertTheme(Create("ScrollingFrame", themeFrame, {
-				ScrollBarImageColor3 = Theme["Color Theme"],
-				Size = UDim2.new(1, 0, 1, 0),
-				ScrollBarThickness = 1.5,
-				BackgroundTransparency = 1,
-				BorderSizePixel = 0,
-				CanvasSize = UDim2.new(),
-				ScrollingDirection = "Y",
-				AutomaticCanvasSize = "Y",
-				Active = true
-			}, {
-				Create("UIPadding", {
-					PaddingLeft = UDim.new(0, 8),
-					PaddingRight = UDim.new(0, 8),
-					PaddingTop = UDim.new(0, 5),
-					PaddingBottom = UDim.new(0, 5)
-				}), Create("UIListLayout", {
-					Padding = UDim.new(0, 4)
-				})
-			}), "ScrollBar")
-			
-			for themeName, themeData in pairs(redzlib.Themes) do
-				local themeButton = Make("Button", themeScroll, {
-					Size = UDim2.new(1, 0, 0, 21),
-					Name = "ThemeOption"
-				})Make("Corner", themeButton, UDim.new(0, 5))
-				
-				local themeNameLabel = InsertTheme(Create("TextLabel", themeButton, {
-					Size = UDim2.new(1, 0, 1, 0),
-					Position = UDim2.new(0, 5, 0, 0),
-					Text = themeName,
-					TextColor3 = Theme["Color Text"],
-					Font = Enum.Font.GothamBold,
-					TextXAlignment = "Left",
-					BackgroundTransparency = 1
-				}), "Text")
-				
-				themeButton.Activated:Connect(function()
-					redzlib:SetTheme(themeName)
-					themeLabel.Text = themeName
-					themeFrame.Visible = false
-				end)
-			end
-			
-			themeDropdown.MouseButton1Click:Connect(function()
-				themeFrame.Visible = not themeFrame.Visible
-				if themeFrame.Visible then
-					local pos = themeDropdown.AbsolutePosition
-					themeFrame.Position = UDim2.new(0, pos.X / UIScale, 0, (pos.Y + themeDropdown.AbsoluteSize.Y) / UIScale)
-					themeFrame.Size = UDim2.new(0, 100, 0, math.min(#redzlib.Themes * 25 + 10, 150))
-				end
-			end)
-		end
-		
-		return frame
-	end
-	
-	CreateConfigOption(ConfigScroll, "RGB Title", "Mudar cor do título", "RGBTitle", nil, function(color)
-		Title.TextColor3 = color
-	end)
-	
-	CreateConfigOption(ConfigScroll, "RGB Sub Title", "Mudar cor do subtítulo", "RGBSubTitle", nil, function(color)
-		Title.SubTitle.TextColor3 = color
-	end)
-	
-	CreateConfigOption(ConfigScroll, "Temas UI", "Mudar tema da interface", "Themes", nil, function() end)
-	
-	ConfigButton.Activated:Connect(function()
-		ConfigOpen = not ConfigOpen
-		ConfigFrame.Visible = ConfigOpen
-		if ConfigOpen then
-			CreateTween({ConfigFrame, "Size", UDim2.new(0, 300, 0, 400), 0.2})
-		else
-			CreateTween({ConfigFrame, "Size", UDim2.new(0, 0, 0, 0), 0.2})
-		end
-	end)
-	
 	CloseButton.Activated:Connect(Window.CloseBtn)
 	MinimizeButton.Activated:Connect(Window.MinimizeBtn)
+	ConfigButton.Activated:Connect(Window.ConfigBtn) -- Conectado o botão de configurações
+
 	return Window
 end
 
