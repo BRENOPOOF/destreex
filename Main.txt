@@ -1350,7 +1350,7 @@ local function ButtonFrame(Instance, Title, Description, HolderSize)
 	}), "DarkText")
 
 	local Frame = Make("Button", Instance, {
-		Size = UDim2.new(1, 0, 0, 25),
+		Size = UDim2.new(1, 0, 0, 30),
 		AutomaticSize = "Y",
 		Name = "Option"
 	})Make("Corner", Frame, UDim.new(0, 6))
@@ -1696,7 +1696,7 @@ function redzlib:MakeWindow(Configs)
 			PaddingTop = UDim.new(0, 10),
 			PaddingBottom = UDim.new(0, 10)
 		}), Create("UIListLayout", {
-			Padding = UDim.new(0, 5)
+			Padding = UDim.new(0, 8)
 		})
 	}), "ScrollBar")
 	
@@ -2172,7 +2172,7 @@ function redzlib:MakeWindow(Configs)
 		end
 		
 		local TabSelect = Make("Button", MainScroll, {
-			Size = UDim2.new(1, 0, 0, 24)
+			Size = UDim2.new(1, 0, 0, 28)
 		})Make("Corner", TabSelect)
 		
 		local LabelTitle = InsertTheme(Create("TextLabel", TabSelect, {
@@ -2225,7 +2225,7 @@ function redzlib:MakeWindow(Configs)
 				PaddingTop = UDim.new(0, 10),
 				PaddingBottom = UDim.new(0, 10)
 			}), Create("UIListLayout", {
-				Padding = UDim.new(0, 5)
+				Padding = UDim.new(0, 8)
 			})
 		}), "ScrollBar")
 		
@@ -2280,7 +2280,7 @@ function redzlib:MakeWindow(Configs)
 			local SectionName = type(Configs) == "string" and Configs or Configs[1] or Configs.Name or Configs.Title or Configs.Section
 			
 			local SectionFrame = Create("Frame", Container, {
-				Size = UDim2.new(1, 0, 0, 20),
+				Size = UDim2.new(1, 0, 0, 25),
 				BackgroundTransparency = 1,
 				Name = "Option"
 			})
